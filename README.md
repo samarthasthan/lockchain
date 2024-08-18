@@ -1,4 +1,3 @@
-
 # Smart Contract Documentation
 
 This directory contains the smart contract for the project, including the contract source code, build artifacts, and migration scripts.
@@ -81,10 +80,16 @@ The `truffle-config.js` file contains the configuration settings for Truffle, in
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](../LICENSE) file for details.
+
 ```
 
 ### Key Points Added:
 
 - **jq Installation Instructions**: Added details on how to install `jq` for different operating systems.
-  
+
 This additional information ensures that users have all the tools they need to work with the smart contract and handle JSON data appropriately. Adjust the installation commands based on the package managers and platforms relevant to your project.
+
+
+ganache-cli --account_keys_path ./accounts.json --networkId 1337
+truffle migrate --network development
+```

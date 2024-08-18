@@ -41,4 +41,7 @@ func (h *Handlers) RegisterValidator() {
 func (h *Handlers) Handle() {
 	// Handle the authentication routes
 	h.RegisterValidator()
+	h.POST("/secret", h.handleCreateSecret)
+	h.GET("/secrets", h.handleGetSecrets)
+	h.GET("/secret/:index", h.handleGetSecretByIndex)
 }
